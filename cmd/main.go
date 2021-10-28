@@ -28,6 +28,7 @@ func main() {
 		} else {
 			bot.Send(tgbotapi.NewMessage(update.Message.Chat.ID,"txt"))
 		}
+		bot.Send(tgbotapi.NewMessage(update.Message.Chat.ID,"Hi"))
 
 		comp := update.Message.Text
 		if comp == "ремонт" {
