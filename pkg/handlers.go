@@ -9,6 +9,7 @@ const commandStart = "start"
 
 func (b *Bot) handleCommand(message *tgbotapi.Message) error {
 	msg := tgbotapi.NewMessage(message.Chat.ID, "Idk this command :(")
+
 	switch message.Command() {
 	case commandStart:
 		msg.Text = "You enabled to start"
